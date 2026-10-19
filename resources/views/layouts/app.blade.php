@@ -1,13 +1,38 @@
 @php
     $company = \App\Support\SiteContent::company();
+    $seoOrigin = \App\Support\SiteContent::origin();
+    $seoCanonical = \App\Support\SiteContent::canonical();
+    $seoTitle = html_entity_decode(trim((string) $__env->getSection('title')), ENT_QUOTES) ?: 'Digital Agency in Qatar | Website Development Doha | PearlMind';
+    $seoDescription = html_entity_decode(trim((string) $__env->getSection('meta_description')), ENT_QUOTES) ?: 'PearlMind is a digital agency in Doha, Qatar for website development, social media marketing, mobile apps, and custom software.';
+    $seoImage = $seoOrigin.'/images/PearlMind-logo.jpeg';
 @endphp
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="hidden-x">
+<html lang="en" class="hidden-x">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="@hasSection('meta_description')@yield('meta_description')@else{{ 'PearlMind is a digital agency in Doha, Qatar — website development, social media marketing, app & software development.' }}@endif">
-    <title>@yield('title', 'Digital Agency in Qatar | PearlMind')</title>
+    <title>{{ $seoTitle }}</title>
+    <meta name="description" content="{{ $seoDescription }}">
+    <meta name="keywords" content="@yield('meta_keywords', 'digital agency Qatar, digital agency Doha, website development Qatar, website design Doha, social media marketing Qatar, app development Qatar, software development Doha, ecommerce website Qatar, PearlMind')">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="author" content="PearlMind">
+    <meta name="geo.region" content="QA">
+    <meta name="geo.placename" content="Doha, Qatar">
+    <meta name="theme-color" content="#1A3E9A">
+    <link rel="canonical" href="{{ $seoCanonical }}">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ $seoOrigin }}/sitemap.xml">
+    <meta property="og:locale" content="en_QA">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="PearlMind">
+    <meta property="og:title" content="{{ $seoTitle }}">
+    <meta property="og:description" content="{{ $seoDescription }}">
+    <meta property="og:url" content="{{ $seoCanonical }}">
+    <meta property="og:image" content="{{ $seoImage }}">
+    <meta property="og:image:alt" content="PearlMind logo">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ $seoTitle }}">
+    <meta name="twitter:description" content="{{ $seoDescription }}">
+    <meta name="twitter:image" content="{{ $seoImage }}">
 
     <link rel="icon" href="{{ asset('images/PearlMind-logo.jpeg') }}">
     <link rel="apple-touch-icon" href="{{ asset('images/PearlMind-logo.jpeg') }}">
@@ -20,11 +45,8 @@
     <link rel="stylesheet" href="{{ asset('amonx/vendors/bootstrap-select/bootstrap-select.min.css') }}">
     <link rel="stylesheet" href="{{ asset('amonx/vendors/aos/css/aos.css') }}">
     <link rel="stylesheet" href="{{ asset('amonx/vendors/fontawesome/css/all.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('amonx/vendors/jquery-ui/jquery-ui.css') }}">
-    <link rel="stylesheet" href="{{ asset('amonx/vendors/jarallax/jarallax.css') }}">
     <link rel="stylesheet" href="{{ asset('amonx/vendors/jquery-magnific-popup/jquery.magnific-popup.css') }}">
     <link rel="stylesheet" href="{{ asset('amonx/vendors/amonx-icons/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('amonx/vendors/slick/slick.css') }}">
     <link rel="stylesheet" href="{{ asset('amonx/vendors/owl-carousel/css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('amonx/vendors/owl-carousel/css/owl.theme.default.min.css') }}">
     <link rel="stylesheet" href="{{ asset('amonx/css/amonx.css') }}">
@@ -86,6 +108,36 @@
             border: 1px solid rgba(47,104,239,.35);
             background: rgba(47,104,239,.08);
         }
+        .page-header__image__box {
+            width: min(480px, 46vw);
+            height: 520px;
+            overflow: hidden;
+        }
+        .page-header__image__box img,
+        .page-header__image__box .grid-reveal-anim-img {
+            width: 100%;
+            height: 520px;
+            object-fit: cover;
+            object-position: center 42%;
+        }
+        .page-header__image__box img.page-header__portrait {
+            object-position: center 12%;
+        }
+        .about-one__experience__year span {
+            background-image: none !important;
+            -webkit-text-fill-color: #2F68EF;
+            color: #2F68EF;
+        }
+        .about-one__info__image {
+            display: block;
+            width: 100%;
+        }
+        .about-one__info__image img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            object-position: center 55%;
+        }
         .about-one__image--pearl .about-one__image__box {
             -webkit-mask: none;
             mask: none;
@@ -107,10 +159,84 @@
             height: 280px;
             object-fit: cover;
         }
+        .team-one__card__image img {
+            width: 100%;
+            height: 340px;
+            object-fit: cover;
+            object-position: center 18%;
+        }
+        .testimonials-one__card__image img {
+            object-fit: cover;
+            object-position: center 20%;
+        }
         .services-three__card__image__box img {
             width: 100%;
             height: 180px;
             object-fit: cover;
+            object-position: center 18%;
+        }
+        .service-details__image {
+            min-height: 460px;
+        }
+        .service-details__image img {
+            min-height: 460px;
+            object-position: center 15%;
+        }
+        .services-one__image img {
+            object-position: center center;
+        }
+        .work-process__card__image {
+            height: 220px;
+        }
+        .work-process__card__image img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            object-position: center 18%;
+        }
+        .why-choose__image__box img {
+            width: 100%;
+            max-width: 420px;
+            height: 520px;
+            object-fit: cover;
+            object-position: center 18%;
+            border-radius: 24px;
+        }
+        .contact-one--page {
+            padding-bottom: 80px;
+        }
+        .pearl-faq {
+            margin-top: 28px;
+            padding: 22px 22px 6px;
+            background: #fff;
+            border-radius: 20px;
+            position: relative;
+            z-index: 3;
+        }
+        .pearl-faq h3 {
+            margin: 0 0 8px;
+            color: #121826;
+            font-size: 22px;
+            line-height: 1.3;
+            letter-spacing: 0;
+        }
+        .pearl-faq details {
+            border-top: 1px solid #e6eaf2;
+            padding: 14px 0;
+        }
+        .pearl-faq summary {
+            color: #121826;
+            font-weight: 600;
+            line-height: 1.45;
+            cursor: pointer;
+        }
+        .pearl-faq details p {
+            margin: 10px 0 0;
+            color: #3d4450;
+            line-height: 1.65;
+        }
+        h1.hero-one__title {
+            margin-top: 0;
         }
     </style>
     @stack('styles')
@@ -118,22 +244,49 @@
     <script type="application/ld+json">
     {!! json_encode([
         '@context' => 'https://schema.org',
-        '@type' => 'LocalBusiness',
-        'name' => $company['name'],
-        'description' => $company['type'],
-        'url' => url('/'),
-        'telephone' => $company['phone'],
-        'email' => $company['email'],
-        'address' => [
-            '@type' => 'PostalAddress',
-            'streetAddress' => 'Building No. 71, Floor No. 6, Office 601, Al Doha Al Jadeeda',
-            'addressLocality' => 'Doha',
-            'addressCountry' => 'QA',
+        '@graph' => [
+            [
+                '@type' => 'ProfessionalService',
+                '@id' => $seoOrigin.'/#business',
+                'name' => $company['name'],
+                'description' => $company['type'],
+                'url' => $seoOrigin.'/',
+                'image' => $seoImage,
+                'logo' => $seoImage,
+                'telephone' => $company['phone_tel'],
+                'email' => $company['email'],
+                'address' => [
+                    '@type' => 'PostalAddress',
+                    'streetAddress' => 'Building No. 71, Floor No. 6, Office 601, Al Doha Al Jadeeda',
+                    'addressLocality' => 'Doha',
+                    'addressRegion' => 'Doha',
+                    'addressCountry' => 'QA',
+                ],
+                'areaServed' => [
+                    ['@type' => 'Country', 'name' => 'Qatar'],
+                    ['@type' => 'City', 'name' => 'Doha'],
+                ],
+                'hasMap' => 'https://maps.google.com/?q=Al+Doha+Al+Jadeeda,+Doha,+Qatar',
+                'knowsAbout' => [
+                    'Website development in Qatar',
+                    'Social media marketing in Doha',
+                    'Mobile app development in Qatar',
+                    'Custom software development in Doha',
+                ],
+            ],
+            [
+                '@type' => 'WebSite',
+                '@id' => $seoOrigin.'/#website',
+                'url' => $seoOrigin.'/',
+                'name' => 'PearlMind',
+                'description' => $seoDescription,
+                'inLanguage' => 'en',
+                'publisher' => ['@id' => $seoOrigin.'/#business'],
+            ],
         ],
-        'areaServed' => 'Qatar',
-        'image' => asset('images/PearlMind-logo.jpeg'),
     ], JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE|JSON_PRETTY_PRINT) !!}
     </script>
+    @stack('jsonld')
 </head>
 <body class="custom-cursor">
 
@@ -182,34 +335,26 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <script src="{{ asset('amonx/vendors/jquery/jquery-3.7.1.min.js') }}"></script>
-    <script src="{{ asset('amonx/vendors/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('amonx/vendors/bootstrap-select/bootstrap-select.min.js') }}"></script>
-    <script src="{{ asset('amonx/vendors/jarallax/jarallax.min.js') }}"></script>
-    <script src="{{ asset('amonx/vendors/jquery-ui/jquery-ui.js') }}"></script>
-    <script src="{{ asset('amonx/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js') }}"></script>
-    <script src="{{ asset('amonx/vendors/jquery-appear/jquery.appear.min.js') }}"></script>
-    <script src="{{ asset('amonx/vendors/jquery-circle-progress/jquery.circle-progress.min.js') }}"></script>
-    <script src="{{ asset('amonx/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js') }}"></script>
-    <script src="{{ asset('amonx/vendors/jquery-validate/jquery.validate.min.js') }}"></script>
-    <script src="{{ asset('amonx/vendors/wnumb/wNumb.min.js') }}"></script>
-    <script src="{{ asset('amonx/vendors/owl-carousel/js/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('amonx/vendors/aos/js/aos.js') }}"></script>
-    <script src="{{ asset('amonx/vendors/imagesloaded/imagesloaded.min.js') }}"></script>
-    <script src="{{ asset('amonx/vendors/isotope/isotope.js') }}"></script>
-    <script src="{{ asset('amonx/vendors/slick/slick.min.js') }}"></script>
-    <script src="{{ asset('amonx/vendors/countdown/countdown.min.js') }}"></script>
-    <script src="{{ asset('amonx/vendors/chart/chart.js') }}"></script>
-    <script src="{{ asset('amonx/vendors/gsap/gsap.min.js') }}"></script>
-    <script src="{{ asset('amonx/vendors/gsap/scrolltrigger.min.js') }}"></script>
-    <script src="{{ asset('amonx/vendors/gsap/splittext.min.js') }}"></script>
-    <script src="{{ asset('amonx/vendors/gsap/ScrollSmoother.min.js') }}"></script>
-    <script src="{{ asset('amonx/vendors/gsap/ScrollToPlugin.min.js') }}"></script>
-    <script src="{{ asset('amonx/vendors/gsap/CustomEase.min.js') }}"></script>
-    <script src="{{ asset('amonx/vendors/gsap/amonx-gsap.js') }}"></script>
-    <script src="{{ asset('amonx/vendors/three-js/three.min.js') }}"></script>
-    <script src="{{ asset('amonx/vendors/hover-effect-js/hover-effect.umd.js') }}"></script>
-    <script src="{{ asset('amonx/js/amonx.js') }}"></script>
+    <script src="{{ asset('amonx/vendors/jquery/jquery-3.7.1.min.js') }}" defer></script>
+    <script src="{{ asset('amonx/vendors/bootstrap/js/bootstrap.bundle.min.js') }}" defer></script>
+    <script src="{{ asset('amonx/vendors/bootstrap-select/bootstrap-select.min.js') }}" defer></script>
+    <script src="{{ asset('amonx/vendors/jquery-appear/jquery.appear.min.js') }}" defer></script>
+    <script src="{{ asset('amonx/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js') }}" defer></script>
+    <script src="{{ asset('amonx/vendors/jquery-validate/jquery.validate.min.js') }}" defer></script>
+    <script src="{{ asset('amonx/vendors/owl-carousel/js/owl.carousel.min.js') }}" defer></script>
+    <script src="{{ asset('amonx/vendors/aos/js/aos.js') }}" defer></script>
+    <script src="{{ asset('amonx/vendors/gsap/gsap.min.js') }}" defer></script>
+    <script src="{{ asset('amonx/vendors/gsap/scrolltrigger.min.js') }}" defer></script>
+    <script src="{{ asset('amonx/vendors/gsap/splittext.min.js') }}" defer></script>
+    <script src="{{ asset('amonx/vendors/gsap/ScrollSmoother.min.js') }}" defer></script>
+    <script src="{{ asset('amonx/vendors/gsap/ScrollToPlugin.min.js') }}" defer></script>
+    <script src="{{ asset('amonx/vendors/gsap/CustomEase.min.js') }}" defer></script>
+    <script src="{{ asset('amonx/vendors/gsap/amonx-gsap.js') }}" defer></script>
+    @if (request()->routeIs('home'))
+        <script src="{{ asset('amonx/vendors/three-js/three.min.js') }}" defer></script>
+        <script src="{{ asset('amonx/vendors/hover-effect-js/hover-effect.umd.js') }}" defer></script>
+    @endif
+    <script src="{{ asset('amonx/js/amonx.js') }}" defer></script>
     @stack('scripts')
 </body>
 </html>

@@ -1,10 +1,15 @@
 @extends('layouts.app')
 
-@section('title', 'Portfolio / Our Work | Client Websites | PearlMind Qatar')
-@section('meta_description', 'PearlMind portfolio — live client websites across Qatar including E-commerce, beauty, consulting, contracting, and more.')
+@section('title', 'Portfolio | Client Websites in Qatar | PearlMind Doha')
+@section('meta_description', 'See PearlMind’s portfolio of live websites for businesses in Qatar — ecommerce, beauty, consulting, contracting, education, and more.')
+@section('meta_keywords', 'web design portfolio Qatar, website portfolio Doha, ecommerce websites Qatar, PearlMind clients, digital agency work Qatar')
 
 @section('content')
-    @include('partials.page-header', ['title' => 'Our Work'])
+    @include('partials.page-header', [
+        'title' => 'Our Work in Qatar',
+        'image' => asset('amonx/images/resources/testimonials-1-1-large.jpg'),
+        'imageAlt' => 'Client wearing a ghutra in Qatar',
+    ])
 
     <section class="project-one space-y">
         <div class="container">

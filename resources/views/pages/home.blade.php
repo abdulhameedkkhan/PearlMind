@@ -1,7 +1,8 @@
 ﻿@extends('layouts.app')
 
-@section('title', 'Digital Agency in Qatar | Website, Marketing & Apps | PearlMind')
-@section('meta_description', 'PearlMind is a leading digital agency in Doha, Qatar — website development, social media marketing, application development, and custom software.')
+@section('title', 'Digital Agency in Qatar | Website Development & Marketing in Doha | PearlMind')
+@section('meta_description', 'PearlMind is a digital agency in Doha, Qatar. We build websites, run social media marketing, and develop mobile apps and custom software for businesses across Qatar.')
+@section('meta_keywords', 'digital agency Qatar, digital agency Doha, website development Qatar, website design Doha, social media marketing Qatar, Instagram marketing Doha, app development Qatar, software development Doha, ecommerce website Qatar, PearlMind')
 
 @section('content')
 <section class="hero-one">
@@ -69,14 +70,14 @@
                             </p>
                             <div class="row gutter-y-30 align-items-center">
                                 <div class="col-lg-10">
-                                    <h2 class="hero-one__title">
+                                    <h1 class="hero-one__title">
                                         <span>Websites That Grow</span> <br>
                                         <span>Your Business Online</span>
-                                    </h2>
+                                    </h1>
                                 </div><!-- /.col-lg-10 -->
                                 <div class="col-lg-2 d-none d-lg-block">
                                     <div class="hero-one__badge">
-                                        <img src="/amonx/images/shapes/hero-1-badge-1.png" alt="hero badge">
+                                        <img src="/amonx/images/shapes/hero-1-badge-1.png" alt="">
                                     </div><!-- /.hero-one__badge -->
                                 </div><!-- /.col-lg-2 -->
                             </div><!-- /.row -->
@@ -85,9 +86,9 @@
                                     <div class="col-xl-4 hero-one__info__column">
                                         <div class="hero-one__client">
                                             <div class="hero-one__client__image">
-                                                <img src="/amonx/images/hero/hero-client-1-1.jpg" alt="hero client">
-                                                <img src="/amonx/images/hero/hero-client-1-2.jpg" alt="hero client">
-                                                <img src="/amonx/images/hero/hero-client-1-3.jpg" alt="hero client">
+                                                <img src="/amonx/images/hero/hero-client-1-1.jpg" alt="Client in Qatar">
+                                                <img src="/amonx/images/hero/hero-client-1-2.jpg" alt="Client in Qatar">
+                                                <img src="/amonx/images/hero/hero-client-1-3.jpg" alt="Client in Qatar">
                                             </div>
                                             <div class="hero-one__client__content">
                                                 <h2 class="hero-one__client__title">952k+ Trusted</h2>
@@ -95,18 +96,12 @@
                                             </div>
                                         </div><!-- /.hero-one__client -->
                                     </div><!-- /.col-xl-4 -->
-                                    <div class="col-xl-5 hero-one__info__column">
+                                    <div class="col-xl-8 hero-one__info__column">
                                         <div class="hero-one__funfact">
                                             <h2 class="hero-one__funfact__title">95%</h2>
                                             <p class="hero-one__funfact__text">Very satisfied clients around of your the worldwide and they’re</p>
                                         </div><!-- /.hero-one__funfact -->
-                                    </div><!-- /.col-xl-5 -->
-                                    <div class="col-xl-3 hero-one__info__column">
-                                        <div class="hero-one__video">
-                                            <a href="https://www.youtube.com/watch?v=h9MbznbxlLc" class="video-btn video-popup"><i class="icon-play"></i></a>
-                                            <p class="hero-one__video__title">Watch Video</p>
-                                        </div><!-- /.hero-one__video -->
-                                    </div><!-- /.col-xl-3 -->
+                                    </div><!-- /.col-xl-8 -->
                                 </div><!-- /.row -->
                             </div><!-- /.hero-one__info -->
                         </div><!-- /.hero-one__content -->
@@ -124,7 +119,7 @@
                                 </div><!-- /.col-lg-10 -->
                                 <div class="col-lg-2 d-none d-lg-block">
                                     <div class="hero-one__badge">
-                                        <img src="/amonx/images/shapes/hero-1-badge-1.png" alt="hero badge">
+                                        <img src="/amonx/images/shapes/hero-1-badge-1.png" alt="">
                                     </div><!-- /.hero-one__badge -->
                                 </div><!-- /.col-lg-2 -->
                             </div><!-- /.row -->
@@ -133,9 +128,9 @@
                                     <div class="col-xl-4 hero-one__info__column">
                                         <div class="hero-one__client">
                                             <div class="hero-one__client__image">
-                                                <img src="/amonx/images/hero/hero-client-1-1.jpg" alt="hero client">
-                                                <img src="/amonx/images/hero/hero-client-1-2.jpg" alt="hero client">
-                                                <img src="/amonx/images/hero/hero-client-1-3.jpg" alt="hero client">
+                                                <img src="/amonx/images/hero/hero-client-1-1.jpg" alt="Client in Qatar">
+                                                <img src="/amonx/images/hero/hero-client-1-2.jpg" alt="Client in Qatar">
+                                                <img src="/amonx/images/hero/hero-client-1-3.jpg" alt="Client in Qatar">
                                             </div>
                                             <div class="hero-one__client__content">
                                                 <h2 class="hero-one__client__title">876k+ Trusted</h2>
@@ -143,18 +138,12 @@
                                             </div>
                                         </div><!-- /.hero-one__client -->
                                     </div><!-- /.col-xl-4 -->
-                                    <div class="col-xl-5 hero-one__info__column">
+                                    <div class="col-xl-8 hero-one__info__column">
                                         <div class="hero-one__funfact">
                                             <h2 class="hero-one__funfact__title">80%</h2>
                                             <p class="hero-one__funfact__text">Very satisfied clients around of your the worldwide and they’re</p>
                                         </div><!-- /.hero-one__funfact -->
-                                    </div><!-- /.col-xl-5 -->
-                                    <div class="col-xl-3 hero-one__info__column">
-                                        <div class="hero-one__video">
-                                            <a href="https://www.youtube.com/watch?v=h9MbznbxlLc" class="video-btn video-popup"><i class="icon-play"></i></a>
-                                            <p class="hero-one__video__title">Watch Video</p>
-                                        </div><!-- /.hero-one__video -->
-                                    </div><!-- /.col-xl-3 -->
+                                    </div><!-- /.col-xl-8 -->
                                 </div><!-- /.row -->
                             </div><!-- /.hero-one__info -->
                         </div><!-- /.hero-one__content -->
@@ -172,7 +161,7 @@
                                 </div><!-- /.col-lg-10 -->
                                 <div class="col-lg-2 d-none d-lg-block">
                                     <div class="hero-one__badge">
-                                        <img src="/amonx/images/shapes/hero-1-badge-1.png" alt="hero badge">
+                                        <img src="/amonx/images/shapes/hero-1-badge-1.png" alt="">
                                     </div><!-- /.hero-one__badge -->
                                 </div><!-- /.col-lg-2 -->
                             </div><!-- /.row -->
@@ -181,9 +170,9 @@
                                     <div class="col-xl-4 hero-one__info__column">
                                         <div class="hero-one__client">
                                             <div class="hero-one__client__image">
-                                                <img src="/amonx/images/hero/hero-client-1-1.jpg" alt="hero client">
-                                                <img src="/amonx/images/hero/hero-client-1-2.jpg" alt="hero client">
-                                                <img src="/amonx/images/hero/hero-client-1-3.jpg" alt="hero client">
+                                                <img src="/amonx/images/hero/hero-client-1-1.jpg" alt="Client in Qatar">
+                                                <img src="/amonx/images/hero/hero-client-1-2.jpg" alt="Client in Qatar">
+                                                <img src="/amonx/images/hero/hero-client-1-3.jpg" alt="Client in Qatar">
                                             </div>
                                             <div class="hero-one__client__content">
                                                 <h2 class="hero-one__client__title">678k+ Trusted</h2>
@@ -191,18 +180,12 @@
                                             </div>
                                         </div><!-- /.hero-one__client -->
                                     </div><!-- /.col-xl-4 -->
-                                    <div class="col-xl-5 hero-one__info__column">
+                                    <div class="col-xl-8 hero-one__info__column">
                                         <div class="hero-one__funfact">
                                             <h2 class="hero-one__funfact__title">75%</h2>
                                             <p class="hero-one__funfact__text">Very satisfied clients around of your the worldwide and they’re</p>
                                         </div><!-- /.hero-one__funfact -->
-                                    </div><!-- /.col-xl-5 -->
-                                    <div class="col-xl-3 hero-one__info__column">
-                                        <div class="hero-one__video">
-                                            <a href="https://www.youtube.com/watch?v=h9MbznbxlLc" class="video-btn video-popup"><i class="icon-play"></i></a>
-                                            <p class="hero-one__video__title">Watch Video</p>
-                                        </div><!-- /.hero-one__video -->
-                                    </div><!-- /.col-xl-3 -->
+                                    </div><!-- /.col-xl-8 -->
                                 </div><!-- /.row -->
                             </div><!-- /.hero-one__info -->
                         </div><!-- /.hero-one__content -->
@@ -220,7 +203,7 @@
                                 </div><!-- /.col-lg-10 -->
                                 <div class="col-lg-2 d-none d-lg-block">
                                     <div class="hero-one__badge">
-                                        <img src="/amonx/images/shapes/hero-1-badge-1.png" alt="hero badge">
+                                        <img src="/amonx/images/shapes/hero-1-badge-1.png" alt="">
                                     </div><!-- /.hero-one__badge -->
                                 </div><!-- /.col-lg-2 -->
                             </div><!-- /.row -->
@@ -229,9 +212,9 @@
                                     <div class="col-xl-4 hero-one__info__column">
                                         <div class="hero-one__client">
                                             <div class="hero-one__client__image">
-                                                <img src="/amonx/images/hero/hero-client-1-1.jpg" alt="hero client">
-                                                <img src="/amonx/images/hero/hero-client-1-2.jpg" alt="hero client">
-                                                <img src="/amonx/images/hero/hero-client-1-3.jpg" alt="hero client">
+                                                <img src="/amonx/images/hero/hero-client-1-1.jpg" alt="Client in Qatar">
+                                                <img src="/amonx/images/hero/hero-client-1-2.jpg" alt="Client in Qatar">
+                                                <img src="/amonx/images/hero/hero-client-1-3.jpg" alt="Client in Qatar">
                                             </div>
                                             <div class="hero-one__client__content">
                                                 <h2 class="hero-one__client__title">895k+ Trusted</h2>
@@ -239,18 +222,12 @@
                                             </div>
                                         </div><!-- /.hero-one__client -->
                                     </div><!-- /.col-xl-4 -->
-                                    <div class="col-xl-5 hero-one__info__column">
+                                    <div class="col-xl-8 hero-one__info__column">
                                         <div class="hero-one__funfact">
                                             <h2 class="hero-one__funfact__title">85%</h2>
                                             <p class="hero-one__funfact__text">Very satisfied clients around of your the worldwide and they’re</p>
                                         </div><!-- /.hero-one__funfact -->
-                                    </div><!-- /.col-xl-5 -->
-                                    <div class="col-xl-3 hero-one__info__column">
-                                        <div class="hero-one__video">
-                                            <a href="https://www.youtube.com/watch?v=h9MbznbxlLc" class="video-btn video-popup"><i class="icon-play"></i></a>
-                                            <p class="hero-one__video__title">Watch Video</p>
-                                        </div><!-- /.hero-one__video -->
-                                    </div><!-- /.col-xl-3 -->
+                                    </div><!-- /.col-xl-8 -->
                                 </div><!-- /.row -->
                             </div><!-- /.hero-one__info -->
                         </div><!-- /.hero-one__content -->
@@ -593,31 +570,31 @@
                                 <div class="services-one__images">
                                     <div class="services-one__image">
                                         <div class="services-one__image__box image-parallax">
-                                            <img src="/amonx/images/services/service-1-1.jpg" alt="service image" class="image-parallax-tb">
+                                            <img src="/amonx/images/services/service-1-1.jpg" alt="Website design workspace" class="image-parallax-tb">
                                         </div><!-- /.services-one__image__box -->
                                         <span class="services-one__image__icon"><i class="icon-bar-chart"></i></span>
                                     </div><!-- /.services-one__image -->
                                     <div class="services-one__image">
                                         <div class="services-one__image__box image-parallax">
-                                            <img src="/amonx/images/services/service-1-2.jpg" alt="service image" class="image-parallax-tb">
+                                            <img src="/amonx/images/services/service-1-2.jpg" alt="Mobile app on a phone" class="image-parallax-tb">
                                         </div><!-- /.services-one__image__box -->
                                         <span class="services-one__image__icon"><i class="icon-chip"></i></span>
                                     </div><!-- /.services-one__image -->
                                     <div class="services-one__image active">
                                         <div class="services-one__image__box image-parallax">
-                                            <img src="/amonx/images/services/service-1-3.jpg" alt="service image" class="image-parallax-tb">
+                                            <img src="/amonx/images/services/service-1-3.jpg" alt="Social media apps" class="image-parallax-tb">
                                         </div><!-- /.services-one__image__box -->
                                         <span class="services-one__image__icon"><i class="icon-settings"></i></span>
                                     </div><!-- /.services-one__image -->
                                     <div class="services-one__image">
                                         <div class="services-one__image__box image-parallax">
-                                            <img src="/amonx/images/services/service-1-4.jpg" alt="service image" class="image-parallax-tb">
+                                            <img src="/amonx/images/services/service-1-4.jpg" alt="Software code on a laptop" class="image-parallax-tb">
                                         </div><!-- /.services-one__image__box -->
                                         <span class="services-one__image__icon"><i class="icon-growth"></i></span>
                                     </div><!-- /.services-one__image -->
                                     <div class="services-one__image">
                                         <div class="services-one__image__box image-parallax">
-                                            <img src="/amonx/images/services/service-1-5.jpg" alt="service image" class="image-parallax-tb">
+                                            <img src="/amonx/images/services/service-1-5.jpg" alt="Software analytics dashboard" class="image-parallax-tb">
                                         </div><!-- /.services-one__image__box -->
                                         <span class="services-one__image__icon"><i class="icon-user-analytics"></i></span>
                                     </div><!-- /.services-one__image -->
@@ -635,7 +612,7 @@
                                 <div class="why-choose__image" data-aos="fade" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" data-aos-delay="500">
                                     <div class="why-choose__image__inner">
                                         <div class="why-choose__image__box">
-                                            <img src="/amonx/images/resources/why-choose-1-1.png" alt="why choose image" class="bw-y-parallax">
+                                            <img src="/images/people/why-choose.jpg" alt="Client in Qatar" class="bw-y-parallax">
                                         </div><!-- /.why-choose__image__box -->
                                         <img src="/amonx/images/shapes/why-choose-1-shape-1.png" alt="why choose shape" class="why-choose__image__shape-1">
                                         <img src="/amonx/images/shapes/why-choose-1-shape-2.png" alt="why choose shape" class="why-choose__image__shape-2">
@@ -754,93 +731,31 @@
                                 </div><!-- /.col-lg-6 -->
                             </div><!-- /.row -->
                         </div><!-- /.project-one__top -->
-                        <div class="row gutter-y-30">
-                            <div class="col-lg-6 reveal-fade-up" data-delay="0.2">
+                                                <div class="row gutter-y-30">
+                            @foreach (array_slice($works, 0, 4) as $work)
+                            <div class="col-lg-6 reveal-fade-up" data-delay="{{ $loop->iteration % 2 === 1 ? '0.2' : '0.4' }}">
                                 <div class="project-one__item bw-hover-item">
-                                    <a href="/portfolio" class="project-one__item__image bw-hover-img" data-displacement="/amonx/images/image-hover/ramen.jpg" data-intensity="0.6" data-speedin="1" data-speedout="1">
-                                        <img src="/amonx/images/project/project-1-1.jpg" alt="Website Development">
-                                    </a><!-- /.project-one__item__image -->
+                                    <a href="{{ $work['url'] }}" target="_blank" rel="noopener noreferrer" class="project-one__item__image bw-hover-img" data-displacement="/amonx/images/image-hover/ramen.jpg" data-intensity="0.6" data-speedin="1" data-speedout="1">
+                                        <img src="{{ $work['img'] }}" alt="{{ $work['title'] }}" loading="lazy" decoding="async">
+                                    </a>
                                     <div class="project-one__item__content">
                                         <div class="project-one__item__left">
                                             <div class="project-one__item__inner">
                                                 <ul class="project-one__item__list list-unstyled">
-                                                    <li><a href="/portfolio">Business</a></li>
-                                                    <li><a href="/portfolio">Websites</a></li>
+                                                    <li><a href="{{ route('portfolio') }}">{{ $work['cat'] }}</a></li>
+                                                    <li><a href="{{ $work['url'] }}" target="_blank" rel="noopener noreferrer">{{ $work['domain'] }}</a></li>
                                                 </ul>
-                                                <h2 class="project-one__item__title"><a href="/portfolio">Website Development</a></h2>
-                                            </div><!-- /.project-one__item__inner -->
-                                            <a href="/portfolio" class="project-one__item__btn"><i class="icon-arrow-double-right-up"></i></a>
+                                                <h2 class="project-one__item__title"><a href="{{ $work['url'] }}" target="_blank" rel="noopener noreferrer">{{ $work['title'] }}</a></h2>
+                                            </div>
+                                            <a href="{{ $work['url'] }}" target="_blank" rel="noopener noreferrer" class="project-one__item__btn"><i class="icon-arrow-double-right-up"></i></a>
                                             <div class="project-one__item__shape"></div>
-                                        </div><!-- /.project-one__item__left -->
-                                        <p class="project-one__item__year"><span class="project-one__item__year__circle"></span><span>2022</span></p>
-                                    </div><!-- /.project-one__item__content -->
-                                </div><!-- /.project-one__item -->
-                            </div><!-- /.col-lg-6 -->
-                            <div class="col-lg-6 reveal-fade-up" data-delay="0.4">
-                                <div class="project-one__item bw-hover-item">
-                                    <a href="/portfolio" class="project-one__item__image bw-hover-img" data-displacement="/amonx/images/image-hover/ramen.jpg" data-intensity="0.6" data-speedin="1" data-speedout="1">
-                                        <img src="/amonx/images/project/project-1-2.jpg" alt="Digital Marketing Projects">
-                                    </a><!-- /.project-one__item__image -->
-                                    <div class="project-one__item__content">
-                                        <div class="project-one__item__left">
-                                            <div class="project-one__item__inner">
-                                                <ul class="project-one__item__list list-unstyled">
-                                                    <li><a href="/portfolio">Planning</a></li>
-                                                    <li><a href="/portfolio">Management</a></li>
-                                                </ul>
-                                                <h2 class="project-one__item__title"><a href="/portfolio">Social Media Marketing</a></h2>
-                                            </div><!-- /.project-one__item__inner -->
-                                            <a href="/portfolio" class="project-one__item__btn"><i class="icon-arrow-double-right-up"></i></a>
-                                            <div class="project-one__item__shape"></div>
-                                        </div><!-- /.project-one__item__left -->
-                                        <p class="project-one__item__year"><span class="project-one__item__year__circle"></span><span>2024</span></p>
-                                    </div><!-- /.project-one__item__content -->
-                                </div><!-- /.project-one__item -->
-                            </div><!-- /.col-lg-6 -->
-                            <div class="col-lg-6 reveal-fade-up" data-delay="0.2">
-                                <div class="project-one__item bw-hover-item">
-                                    <a href="/portfolio" class="project-one__item__image bw-hover-img" data-displacement="/amonx/images/image-hover/ramen.jpg" data-intensity="0.6" data-speedin="1" data-speedout="1">
-                                        <img src="/amonx/images/project/project-1-3.jpg" alt="Marketing Strategy and Sales">
-                                    </a><!-- /.project-one__item__image -->
-                                    <div class="project-one__item__content">
-                                        <div class="project-one__item__left">
-                                            <div class="project-one__item__inner">
-                                                <ul class="project-one__item__list list-unstyled">
-                                                    <li><a href="/portfolio">Marketing</a></li>
-                                                    <li><a href="/portfolio">Technology</a></li>
-                                                </ul>
-                                                <h2 class="project-one__item__title"><a href="/portfolio">Application Development</a></h2>
-                                            </div><!-- /.project-one__item__inner -->
-                                            <a href="/portfolio" class="project-one__item__btn"><i class="icon-arrow-double-right-up"></i></a>
-                                            <div class="project-one__item__shape"></div>
-                                        </div><!-- /.project-one__item__left -->
-                                        <p class="project-one__item__year"><span class="project-one__item__year__circle"></span><span>2025</span></p>
-                                    </div><!-- /.project-one__item__content -->
-                                </div><!-- /.project-one__item -->
-                            </div><!-- /.col-lg-6 -->
-                            <div class="col-lg-6 reveal-fade-up" data-delay="0.4">
-                                <div class="project-one__item bw-hover-item">
-                                    <a href="/portfolio" class="project-one__item__image bw-hover-img" data-displacement="/amonx/images/image-hover/ramen.jpg" data-intensity="0.6" data-speedin="1" data-speedout="1">
-                                        <img src="/amonx/images/project/project-1-4.jpg" alt="Business Analytics And Financial">
-                                    </a><!-- /.project-one__item__image -->
-                                    <div class="project-one__item__content">
-                                        <div class="project-one__item__left">
-                                            <div class="project-one__item__inner">
-                                                <ul class="project-one__item__list list-unstyled">
-                                                    <li><a href="/portfolio">Business</a></li>
-                                                    <li><a href="/portfolio">Financial</a></li>
-                                                </ul>
-                                                <h2 class="project-one__item__title"><a href="/portfolio">Software Development</a></h2>
-                                            </div><!-- /.project-one__item__inner -->
-                                            <a href="/portfolio" class="project-one__item__btn"><i class="icon-arrow-double-right-up"></i></a>
-                                            <div class="project-one__item__shape"></div>
-                                        </div><!-- /.project-one__item__left -->
-                                        <p class="project-one__item__year"><span class="project-one__item__year__circle"></span><span>2026</span></p>
-                                    </div><!-- /.project-one__item__content -->
-                                </div><!-- /.project-one__item -->
-                            </div><!-- /.col-lg-6 -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            @endforeach
                         </div><!-- /.row -->
-                    </div><!-- /.container -->
+</div><!-- /.container -->
                 </section><!-- /.project-one -->
 
                 <section class="marquee-one space-y">
@@ -916,185 +831,29 @@
                             </p>
                             <h2 class="sec-title__title title-fade-in">People Behind the <br> Digital Work.</h2>
                         </div><!-- /.sec-title -->
-                        <div class="team-one__wrapper reveal-fade-up" data-delay="0.2">
+                                                <div class="team-one__wrapper reveal-fade-up" data-delay="0.2">
                             <div class="row">
+                                @foreach ($team as $member)
                                 <div class="col-xl-3 col-md-6">
-                                    <div class="team-one__card team-one__card--top-img">
+                                    <div class="team-one__card {{ $loop->iteration % 2 === 1 ? 'team-one__card--top-img' : '' }}">
                                         <div class="team-one__card__content">
                                             <div class="team-one__card__image">
                                                 <div class="team-one__card__image__box grid-reveal-anim">
-                                                    <img src="/amonx/images/team/team-1-1.jpg" alt="Web Design" data-animate="true" class="grid-reveal-anim-img">
+                                                    <img src="{{ $member->photo }}" alt="{{ $member->name }}" data-animate="true" class="grid-reveal-anim-img" loading="lazy" decoding="async">
                                                 </div>
-                                                <div class="social-links ">
-                                                    <a href="https://facebook.com">
-                                                        <span class="social-links__icon">
-                                                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                                                            <span class="sr-only">Facebook</span>
-                                                        </span>
-                                                    </a>
-                                                    <a href="https://x.com">
-                                                        <span class="social-links__icon">
-                                                            <i class="icon-twitter-x" aria-hidden="true"></i>
-                                                            <span class="sr-only">X</span>
-                                                        </span>
-                                                    </a>
-                                                    <a href="https://linkedin.com">
-                                                        <span class="social-links__icon">
-                                                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-                                                            <span class="sr-only">Linkedin</span>
-                                                        </span>
-                                                    </a>
-                                                    <a href="https://dribbble.com/">
-                                                        <span class="social-links__icon">
-                                                            <i class="fab fa-dribbble" aria-hidden="true"></i>
-                                                            <span class="sr-only">Dribbble</span>
-                                                        </span>
-                                                    </a>
-                                                </div><!-- /.social-links -->
-                                            </div><!-- /.team-one__card__image -->
+                                            </div>
                                             <div class="team-one__card__identity">
-                                                <h2 class="team-one__card__name"><a href="/about">Web Design</a></h2>
-                                                <p class="team-one__card__role">Founder</p>
-                                            </div><!-- /.team-one__card__identity -->
-                                        </div><!-- /.team-one__card__content -->
+                                                <h2 class="team-one__card__name"><a href="{{ route('about') }}">{{ $member->name }}</a></h2>
+                                                <p class="team-one__card__role">{{ $member->role }}</p>
+                                            </div>
+                                        </div>
                                         <div class="team-one__card__shape">
-                                            <img src="/amonx/images/shapes/team-card-1-shape-1.png" alt="shape">
-                                        </div><!-- /.team-one__card__shape -->
-                                    </div><!-- /.team-one__card -->
-                                </div><!-- /.col-xl-3 -->
-                                <div class="col-xl-3 col-md-6">
-                                    <div class="team-one__card">
-                                        <div class="team-one__card__content">
-                                            <div class="team-one__card__image">
-                                                <div class="team-one__card__image__box grid-reveal-anim">
-                                                    <img src="/amonx/images/team/team-1-2.jpg" alt="Social Media" data-animate="true" class="grid-reveal-anim-img">
-                                                </div>
-                                                <div class="social-links ">
-                                                    <a href="https://facebook.com">
-                                                        <span class="social-links__icon">
-                                                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                                                            <span class="sr-only">Facebook</span>
-                                                        </span>
-                                                    </a>
-                                                    <a href="https://x.com">
-                                                        <span class="social-links__icon">
-                                                            <i class="icon-twitter-x" aria-hidden="true"></i>
-                                                            <span class="sr-only">X</span>
-                                                        </span>
-                                                    </a>
-                                                    <a href="https://linkedin.com">
-                                                        <span class="social-links__icon">
-                                                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-                                                            <span class="sr-only">Linkedin</span>
-                                                        </span>
-                                                    </a>
-                                                    <a href="https://dribbble.com/">
-                                                        <span class="social-links__icon">
-                                                            <i class="fab fa-dribbble" aria-hidden="true"></i>
-                                                            <span class="sr-only">Dribbble</span>
-                                                        </span>
-                                                    </a>
-                                                </div><!-- /.social-links -->
-                                            </div><!-- /.team-one__card__image -->
-                                            <div class="team-one__card__identity">
-                                                <h2 class="team-one__card__name"><a href="/about">Social Media</a></h2>
-                                                <p class="team-one__card__role">Maneger</p>
-                                            </div><!-- /.team-one__card__identity -->
-                                        </div><!-- /.team-one__card__content -->
-                                        <div class="team-one__card__shape">
-                                            <img src="/amonx/images/shapes/team-card-1-shape-1.png" alt="shape">
-                                        </div><!-- /.team-one__card__shape -->
-                                    </div><!-- /.team-one__card -->
-                                </div><!-- /.col-xl-3 -->
-                                <div class="col-xl-3 col-md-6">
-                                    <div class="team-one__card team-one__card--top-img">
-                                        <div class="team-one__card__content">
-                                            <div class="team-one__card__image">
-                                                <div class="team-one__card__image__box grid-reveal-anim">
-                                                    <img src="/amonx/images/team/team-1-3.jpg" alt="App Development" data-animate="true" class="grid-reveal-anim-img">
-                                                </div>
-                                                <div class="social-links ">
-                                                    <a href="https://facebook.com">
-                                                        <span class="social-links__icon">
-                                                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                                                            <span class="sr-only">Facebook</span>
-                                                        </span>
-                                                    </a>
-                                                    <a href="https://x.com">
-                                                        <span class="social-links__icon">
-                                                            <i class="icon-twitter-x" aria-hidden="true"></i>
-                                                            <span class="sr-only">X</span>
-                                                        </span>
-                                                    </a>
-                                                    <a href="https://linkedin.com">
-                                                        <span class="social-links__icon">
-                                                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-                                                            <span class="sr-only">Linkedin</span>
-                                                        </span>
-                                                    </a>
-                                                    <a href="https://dribbble.com/">
-                                                        <span class="social-links__icon">
-                                                            <i class="fab fa-dribbble" aria-hidden="true"></i>
-                                                            <span class="sr-only">Dribbble</span>
-                                                        </span>
-                                                    </a>
-                                                </div><!-- /.social-links -->
-                                            </div><!-- /.team-one__card__image -->
-                                            <div class="team-one__card__identity">
-                                                <h2 class="team-one__card__name"><a href="/about">App Development</a></h2>
-                                                <p class="team-one__card__role">Co - Founder</p>
-                                            </div><!-- /.team-one__card__identity -->
-                                        </div><!-- /.team-one__card__content -->
-                                        <div class="team-one__card__shape">
-                                            <img src="/amonx/images/shapes/team-card-1-shape-1.png" alt="shape">
-                                        </div><!-- /.team-one__card__shape -->
-                                    </div><!-- /.team-one__card -->
-                                </div><!-- /.col-xl-3 -->
-                                <div class="col-xl-3 col-md-6">
-                                    <div class="team-one__card">
-                                        <div class="team-one__card__content">
-                                            <div class="team-one__card__image">
-                                                <div class="team-one__card__image__box grid-reveal-anim">
-                                                    <img src="/amonx/images/team/team-1-4.jpg" alt="Software" data-animate="true" class="grid-reveal-anim-img">
-                                                </div>
-                                                <div class="social-links ">
-                                                    <a href="https://facebook.com">
-                                                        <span class="social-links__icon">
-                                                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                                                            <span class="sr-only">Facebook</span>
-                                                        </span>
-                                                    </a>
-                                                    <a href="https://x.com">
-                                                        <span class="social-links__icon">
-                                                            <i class="icon-twitter-x" aria-hidden="true"></i>
-                                                            <span class="sr-only">X</span>
-                                                        </span>
-                                                    </a>
-                                                    <a href="https://linkedin.com">
-                                                        <span class="social-links__icon">
-                                                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-                                                            <span class="sr-only">Linkedin</span>
-                                                        </span>
-                                                    </a>
-                                                    <a href="https://dribbble.com/">
-                                                        <span class="social-links__icon">
-                                                            <i class="fab fa-dribbble" aria-hidden="true"></i>
-                                                            <span class="sr-only">Dribbble</span>
-                                                        </span>
-                                                    </a>
-                                                </div><!-- /.social-links -->
-                                            </div><!-- /.team-one__card__image -->
-                                            <div class="team-one__card__identity">
-                                                <h2 class="team-one__card__name"><a href="/about">Software</a></h2>
-                                                <p class="team-one__card__role">Support</p>
-                                            </div><!-- /.team-one__card__identity -->
-                                        </div><!-- /.team-one__card__content -->
-                                        <div class="team-one__card__shape">
-                                            <img src="/amonx/images/shapes/team-card-1-shape-1.png" alt="shape">
-                                        </div><!-- /.team-one__card__shape -->
-                                    </div><!-- /.team-one__card -->
-                                </div><!-- /.col-xl-3 -->
-                            </div><!-- /.row -->
+                                            <img src="/amonx/images/shapes/team-card-1-shape-1.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                @endforeach
+                            </div>
                         </div><!-- /.team-one__wrapper -->
                     </div><!-- /.container -->
                 </section><!-- /.team-one -->
@@ -1214,7 +973,7 @@
                                             <h2 class="work-process__card__title">Discovery Analysis</h2>
                                             <span class="work-process__card__step"><span class="work-process__card__step__circle"></span> STEP:</span>
                                             <div class="work-process__card__image">
-                                                <img src="/amonx/images/resources/work-process-1-1.jpg" alt="work process">
+                                                <img src="/amonx/images/resources/work-process-1-1.jpg" alt="Client in Qatar">
                                             </div><!-- /.work-process__card__image -->
                                         </div><!-- /.work-process__card__content -->
                                         <div class="work-process__card__bg"></div>
@@ -1226,7 +985,7 @@
                                             <h2 class="work-process__card__title">Strategic Plan</h2>
                                             <span class="work-process__card__step"><span class="work-process__card__step__circle"></span> STEP:</span>
                                             <div class="work-process__card__image">
-                                                <img src="/amonx/images/resources/work-process-1-2.jpg" alt="work process">
+                                                <img src="/amonx/images/resources/work-process-1-2.jpg" alt="Client in Qatar">
                                             </div><!-- /.work-process__card__image -->
                                         </div><!-- /.work-process__card__content -->
                                         <div class="work-process__card__bg"></div>
@@ -1238,7 +997,7 @@
                                             <h2 class="work-process__card__title">Development</h2>
                                             <span class="work-process__card__step"><span class="work-process__card__step__circle"></span> STEP:</span>
                                             <div class="work-process__card__image">
-                                                <img src="/amonx/images/resources/work-process-1-3.jpg" alt="work process">
+                                                <img src="/amonx/images/resources/work-process-1-3.jpg" alt="Client in Qatar">
                                             </div><!-- /.work-process__card__image -->
                                         </div><!-- /.work-process__card__content -->
                                         <div class="work-process__card__bg"></div>
@@ -1250,7 +1009,7 @@
                                             <h2 class="work-process__card__title">Completed</h2>
                                             <span class="work-process__card__step"><span class="work-process__card__step__circle"></span> STEP:</span>
                                             <div class="work-process__card__image">
-                                                <img src="/amonx/images/resources/work-process-1-4.jpg" alt="work process">
+                                                <img src="/amonx/images/resources/work-process-1-4.jpg" alt="Client in Qatar">
                                             </div><!-- /.work-process__card__image -->
                                         </div><!-- /.work-process__card__content -->
                                         <div class="work-process__card__bg"></div>
@@ -1341,10 +1100,10 @@
                                         </div><!-- /.testimonials-one__card__show__top -->
                                         <div class="testimonials-one__card__identity">
                                             <div class="testimonials-one__card__image">
-                                                <img src="/amonx/images/resources/testimonials-1-1.png" alt="George Mosby">
+                                                <img src="/amonx/images/resources/testimonials-1-1.png" alt="Client">
                                             </div>
                                             <div class="testimonials-one__card__info">
-                                                <h2 class="testimonials-one__card__name">George Mosby</h2>
+                                                <h2 class="testimonials-one__card__name">Client</h2>
                                                 <p class="testimonials-one__card__role">Ceo-Founder</p>
                                             </div>
                                         </div><!-- /.testimonials-one__card__identity -->
@@ -1365,13 +1124,13 @@
                                         <p class="testimonials-one__card__quote">“Their strategic insights of helped us streamline form operations & increases to overall business solution & performance beyond.”</p>
                                         <div class="testimonials-one__card__identity">
                                             <div class="testimonials-one__card__info">
-                                                <h2 class="testimonials-one__card__name">George Mosby</h2>
+                                                <h2 class="testimonials-one__card__name">Client</h2>
                                                 <p class="testimonials-one__card__role">Ceo-Founder</p>
                                             </div>
                                             <span class="testimonials-one__card__quote-icon"><i class="icon-quote-2"></i></span>
                                         </div><!-- /.testimonials-one__card__identity -->
                                     </div><!-- /.testimonials-one__card__hover__content -->
-                                    <img src="/amonx/images/resources/testimonials-1-1-large.jpg" alt="George Mosby" class="testimonials-one__card__hover__image">
+                                    <img src="/amonx/images/resources/testimonials-1-1-large.jpg" alt="Client" class="testimonials-one__card__hover__image">
                                 </div><!-- /.testimonials-one__card__hover -->
                             </div><!-- /.testimonials-one__card -->
                             <div class="testimonials-one__card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300" data-aos-delay="200">
@@ -1553,10 +1312,10 @@
                                         </div><!-- /.testimonials-one__card__show__top -->
                                         <div class="testimonials-one__card__identity">
                                             <div class="testimonials-one__card__image">
-                                                <img src="/amonx/images/resources/testimonials-1-5.png" alt="Ethel Daley">
+                                                <img src="/amonx/images/resources/testimonials-1-5.png" alt="Client">
                                             </div>
                                             <div class="testimonials-one__card__info">
-                                                <h2 class="testimonials-one__card__name">Ethel Daley</h2>
+                                                <h2 class="testimonials-one__card__name">Client</h2>
                                                 <p class="testimonials-one__card__role">Ceo-Founder</p>
                                             </div>
                                         </div><!-- /.testimonials-one__card__identity -->
@@ -1577,13 +1336,13 @@
                                         <p class="testimonials-one__card__quote">“Can you make it pop was i smoking crack when i sent this? hahaha!, yet we are a non-profit organization, yet other agencies charge much.”</p>
                                         <div class="testimonials-one__card__identity">
                                             <div class="testimonials-one__card__info">
-                                                <h2 class="testimonials-one__card__name">Ethel Daley</h2>
+                                                <h2 class="testimonials-one__card__name">Client</h2>
                                                 <p class="testimonials-one__card__role">Ceo-Founder</p>
                                             </div>
                                             <span class="testimonials-one__card__quote-icon"><i class="icon-quote-2"></i></span>
                                         </div><!-- /.testimonials-one__card__identity -->
                                     </div><!-- /.testimonials-one__card__hover__content -->
-                                    <img src="/amonx/images/resources/testimonials-1-5-large.jpg" alt="Ethel Daley" class="testimonials-one__card__hover__image">
+                                    <img src="/amonx/images/resources/testimonials-1-5-large.jpg" alt="Client" class="testimonials-one__card__hover__image">
                                 </div><!-- /.testimonials-one__card__hover -->
                             </div><!-- /.testimonials-one__card -->
                             <div class="testimonials-one__card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300" data-aos-delay="600">
@@ -1606,10 +1365,10 @@
                                         </div><!-- /.testimonials-one__card__show__top -->
                                         <div class="testimonials-one__card__identity">
                                             <div class="testimonials-one__card__image">
-                                                <img src="/amonx/images/resources/testimonials-1-6.png" alt="Albert Flores">
+                                                <img src="/amonx/images/resources/testimonials-1-6.png" alt="Client">
                                             </div>
                                             <div class="testimonials-one__card__info">
-                                                <h2 class="testimonials-one__card__name">Albert Flores</h2>
+                                                <h2 class="testimonials-one__card__name">Client</h2>
                                                 <p class="testimonials-one__card__role">Ceo-Founder</p>
                                             </div>
                                         </div><!-- /.testimonials-one__card__identity -->
@@ -1630,13 +1389,13 @@
                                         <p class="testimonials-one__card__quote">“I have an awesome idea for a startup, i need you to build it for me i'll know it when i see it, the hair is just too polarising, nor the website doesn't have.”</p>
                                         <div class="testimonials-one__card__identity">
                                             <div class="testimonials-one__card__info">
-                                                <h2 class="testimonials-one__card__name">Albert Flores</h2>
+                                                <h2 class="testimonials-one__card__name">Client</h2>
                                                 <p class="testimonials-one__card__role">Ceo-Founder</p>
                                             </div>
                                             <span class="testimonials-one__card__quote-icon"><i class="icon-quote-2"></i></span>
                                         </div><!-- /.testimonials-one__card__identity -->
                                     </div><!-- /.testimonials-one__card__hover__content -->
-                                    <img src="/amonx/images/resources/testimonials-1-6-large.jpg" alt="Albert Flores" class="testimonials-one__card__hover__image">
+                                    <img src="/amonx/images/resources/testimonials-1-6-large.jpg" alt="Client" class="testimonials-one__card__hover__image">
                                 </div><!-- /.testimonials-one__card__hover -->
                             </div><!-- /.testimonials-one__card -->
                             <div class="testimonials-one__card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300" data-aos-delay="100">
@@ -1659,10 +1418,10 @@
                                         </div><!-- /.testimonials-one__card__show__top -->
                                         <div class="testimonials-one__card__identity">
                                             <div class="testimonials-one__card__image">
-                                                <img src="/amonx/images/resources/testimonials-1-1.png" alt="George Mosby">
+                                                <img src="/amonx/images/resources/testimonials-1-1.png" alt="Client">
                                             </div>
                                             <div class="testimonials-one__card__info">
-                                                <h2 class="testimonials-one__card__name">George Mosby</h2>
+                                                <h2 class="testimonials-one__card__name">Client</h2>
                                                 <p class="testimonials-one__card__role">Ceo-Founder</p>
                                             </div>
                                         </div><!-- /.testimonials-one__card__identity -->
@@ -1683,13 +1442,13 @@
                                         <p class="testimonials-one__card__quote">“Their strategic insights of helped us streamline form operations & increases to overall business solution & performance beyond.”</p>
                                         <div class="testimonials-one__card__identity">
                                             <div class="testimonials-one__card__info">
-                                                <h2 class="testimonials-one__card__name">George Mosby</h2>
+                                                <h2 class="testimonials-one__card__name">Client</h2>
                                                 <p class="testimonials-one__card__role">Ceo-Founder</p>
                                             </div>
                                             <span class="testimonials-one__card__quote-icon"><i class="icon-quote-2"></i></span>
                                         </div><!-- /.testimonials-one__card__identity -->
                                     </div><!-- /.testimonials-one__card__hover__content -->
-                                    <img src="/amonx/images/resources/testimonials-1-1-large.jpg" alt="George Mosby" class="testimonials-one__card__hover__image">
+                                    <img src="/amonx/images/resources/testimonials-1-1-large.jpg" alt="Client" class="testimonials-one__card__hover__image">
                                 </div><!-- /.testimonials-one__card__hover -->
                             </div><!-- /.testimonials-one__card -->
                             <div class="testimonials-one__card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300" data-aos-delay="200">
@@ -1871,10 +1630,10 @@
                                         </div><!-- /.testimonials-one__card__show__top -->
                                         <div class="testimonials-one__card__identity">
                                             <div class="testimonials-one__card__image">
-                                                <img src="/amonx/images/resources/testimonials-1-5.png" alt="Ethel Daley">
+                                                <img src="/amonx/images/resources/testimonials-1-5.png" alt="Client">
                                             </div>
                                             <div class="testimonials-one__card__info">
-                                                <h2 class="testimonials-one__card__name">Ethel Daley</h2>
+                                                <h2 class="testimonials-one__card__name">Client</h2>
                                                 <p class="testimonials-one__card__role">Ceo-Founder</p>
                                             </div>
                                         </div><!-- /.testimonials-one__card__identity -->
@@ -1895,13 +1654,13 @@
                                         <p class="testimonials-one__card__quote">“Can you make it pop was i smoking crack when i sent this? hahaha!, yet we are a non-profit organization, yet other agencies charge much.”</p>
                                         <div class="testimonials-one__card__identity">
                                             <div class="testimonials-one__card__info">
-                                                <h2 class="testimonials-one__card__name">Ethel Daley</h2>
+                                                <h2 class="testimonials-one__card__name">Client</h2>
                                                 <p class="testimonials-one__card__role">Ceo-Founder</p>
                                             </div>
                                             <span class="testimonials-one__card__quote-icon"><i class="icon-quote-2"></i></span>
                                         </div><!-- /.testimonials-one__card__identity -->
                                     </div><!-- /.testimonials-one__card__hover__content -->
-                                    <img src="/amonx/images/resources/testimonials-1-5-large.jpg" alt="Ethel Daley" class="testimonials-one__card__hover__image">
+                                    <img src="/amonx/images/resources/testimonials-1-5-large.jpg" alt="Client" class="testimonials-one__card__hover__image">
                                 </div><!-- /.testimonials-one__card__hover -->
                             </div><!-- /.testimonials-one__card -->
                             <div class="testimonials-one__card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300" data-aos-delay="600">
@@ -1924,10 +1683,10 @@
                                         </div><!-- /.testimonials-one__card__show__top -->
                                         <div class="testimonials-one__card__identity">
                                             <div class="testimonials-one__card__image">
-                                                <img src="/amonx/images/resources/testimonials-1-6.png" alt="Albert Flores">
+                                                <img src="/amonx/images/resources/testimonials-1-6.png" alt="Client">
                                             </div>
                                             <div class="testimonials-one__card__info">
-                                                <h2 class="testimonials-one__card__name">Albert Flores</h2>
+                                                <h2 class="testimonials-one__card__name">Client</h2>
                                                 <p class="testimonials-one__card__role">Ceo-Founder</p>
                                             </div>
                                         </div><!-- /.testimonials-one__card__identity -->
@@ -1948,13 +1707,13 @@
                                         <p class="testimonials-one__card__quote">“I have an awesome idea for a startup, i need you to build it for me i'll know it when i see it, the hair is just too polarising, nor the website doesn't have.”</p>
                                         <div class="testimonials-one__card__identity">
                                             <div class="testimonials-one__card__info">
-                                                <h2 class="testimonials-one__card__name">Albert Flores</h2>
+                                                <h2 class="testimonials-one__card__name">Client</h2>
                                                 <p class="testimonials-one__card__role">Ceo-Founder</p>
                                             </div>
                                             <span class="testimonials-one__card__quote-icon"><i class="icon-quote-2"></i></span>
                                         </div><!-- /.testimonials-one__card__identity -->
                                     </div><!-- /.testimonials-one__card__hover__content -->
-                                    <img src="/amonx/images/resources/testimonials-1-6-large.jpg" alt="Albert Flores" class="testimonials-one__card__hover__image">
+                                    <img src="/amonx/images/resources/testimonials-1-6-large.jpg" alt="Client" class="testimonials-one__card__hover__image">
                                 </div><!-- /.testimonials-one__card__hover -->
                             </div><!-- /.testimonials-one__card -->
                         </div><!-- /.testimonials-one__carousel -->
@@ -1963,9 +1722,9 @@
 
                 <section class="contact-one contact-one--home image-parallax space-top">
                     <div class="contact-one__video">
-                        <video class="contact-one__video__bg image-parallax-lr" autoplay="" muted="" loop="" playsinline="" preload="auto">
-                            <source src="/amonx/images/videos/contact-1-1.mp4" type="video/mp4">
-                        </video><!-- /.contact-one__video__bg-->
+                        <video class="contact-one__video__bg" autoplay muted loop playsinline preload="metadata" poster="/images/qatar/westbay.jpg">
+                            <source src="/amonx/images/videos/doha-skyline.mp4" type="video/mp4">
+                        </video>
                     </div><!-- /.contact-one__video -->
                     <div class="container">
                         <div class="row gutter-y-40">

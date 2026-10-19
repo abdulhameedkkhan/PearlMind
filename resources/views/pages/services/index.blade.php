@@ -1,20 +1,25 @@
 @extends('layouts.app')
 
-@section('title', 'Services | Digital Agency Qatar | PearlMind')
-@section('meta_description', 'PearlMind services in Qatar — website development, social media marketing & management, application development, and custom software.')
+@section('title', 'Digital Services in Qatar | Web, Social, Apps & Software | PearlMind')
+@section('meta_description', 'PearlMind services in Qatar: website development, social media marketing and management, Android and iOS apps, and custom software for Doha businesses.')
+@section('meta_keywords', 'digital services Qatar, website development Doha, social media management Qatar, mobile app development Doha, custom software Qatar, PearlMind services')
 
 @php
     $serviceIcons = ['icon-settings', 'icon-growth', 'icon-chip', 'icon-bar-chart'];
     $serviceImages = [
-        'website-development' => asset('amonx/images/services/service-3-1.jpg'),
-        'social-media-marketing' => asset('amonx/images/services/service-3-2.jpg'),
-        'application-development' => asset('amonx/images/services/service-3-3.jpg'),
-        'software-development' => asset('amonx/images/services/service-3-4.jpg'),
+        'website-development' => asset('amonx/images/team/team-1-1.jpg'),
+        'social-media-marketing' => asset('amonx/images/team/team-1-2.jpg'),
+        'application-development' => asset('amonx/images/resources/testimonials-1-2-large.jpg'),
+        'software-development' => asset('amonx/images/team/team-1-4.jpg'),
     ];
 @endphp
 
 @section('content')
-    @include('partials.page-header', ['title' => 'Our Services'])
+    @include('partials.page-header', [
+        'title' => 'Digital Services in Qatar',
+        'image' => asset('amonx/images/team/team-1-3.jpg'),
+        'imageAlt' => 'Client in traditional Qatari dress',
+    ])
 
     <section class="services-three services-three--page space-y">
         <div class="container">

@@ -2,6 +2,9 @@
 
 namespace App\Support;
 
+use App\Models\Project;
+use Illuminate\Support\Facades\Schema;
+
 class SiteContent
 {
     public static function company(): array
@@ -18,6 +21,25 @@ class SiteContent
         ];
     }
 
+    public static function origin(): string
+    {
+        $base = rtrim((string) config('app.url'), '/');
+        $host = parse_url($base, PHP_URL_HOST) ?: '';
+
+        if ($host === '' || in_array($host, ['localhost', '127.0.0.1'], true)) {
+            return 'https://pearlmind.qa';
+        }
+
+        return $base;
+    }
+
+    public static function canonical(?string $path = null): string
+    {
+        $path = trim($path ?? request()->path(), '/');
+
+        return self::origin().($path === '' ? '/' : '/'.$path);
+    }
+
     public static function services(): array
     {
         return [
@@ -29,7 +51,8 @@ class SiteContent
                 'text' => 'At PearlMind, we design and develop modern, fast, and reliable websites tailored to your business needs. Whether you need a WordPress website, a fully custom-coded solution, or a complete E-commerce store, our team builds websites that are visually appealing, mobile-friendly, and optimized to convert visitors into customers. We offer end-to-end E-commerce development — from product catalogs and secure payment integration to inventory management — giving your business a complete online store built to grow with you.',
                 'meta_title' => 'Website Development Doha | PearlMind Digital Agency Qatar',
                 'meta_description' => 'Website development in Doha, Qatar — WordPress, custom-coded sites, and complete E-commerce solutions by PearlMind.',
-                'img' => '/images/services/website.jpg',
+                'meta_keywords' => 'website development Qatar, website design Doha, WordPress website Qatar, ecommerce website Doha, web design company Qatar',
+                'img' => '/amonx/images/resources/testimonials-1-6-large.jpg',
                 'offers' => [
                     'WordPress Website Development',
                     'Custom-Coded Website Development',
@@ -50,7 +73,8 @@ class SiteContent
                 'text' => 'PearlMind helps brands grow their presence on social media through strategic content, creative design, and consistent engagement. We manage complete social media accounts for businesses across various industries including beauty salons, E-commerce brands, car garages, trading & contracting companies, and restaurants — building strong online communities that turn followers into loyal customers.',
                 'meta_title' => 'Social Media Marketing Qatar | PearlMind Doha',
                 'meta_description' => 'Social media marketing & management in Qatar — Instagram, Facebook, TikTok content, ads, and growth strategy by PearlMind.',
-                'img' => '/images/services/social.jpg',
+                'meta_keywords' => 'social media marketing Qatar, social media management Doha, Instagram marketing Qatar, Facebook ads Doha, TikTok content Qatar',
+                'img' => '/amonx/images/resources/testimonials-1-5-large.jpg',
                 'offers' => [
                     'Social Media Account Management (Instagram, Facebook, TikTok)',
                     'Content Creation & Graphic Design',
@@ -78,7 +102,8 @@ class SiteContent
                 'text' => 'PearlMind builds high-performing mobile applications for Android and iOS, designed to give your business a seamless digital presence beyond the website. From concept to launch, we handle UI/UX design, development, testing, and deployment to app stores.',
                 'meta_title' => 'App Development Qatar | Mobile Apps Doha | PearlMind',
                 'meta_description' => 'Mobile application development in Qatar — Android, iOS, and cross-platform apps by PearlMind in Doha.',
-                'img' => '/images/services/apps.jpg',
+                'meta_keywords' => 'app development Qatar, mobile app development Doha, Android app Qatar, iOS app Doha, application development Qatar',
+                'img' => '/amonx/images/resources/testimonials-1-2-large.jpg',
                 'offers' => [
                     'Android & iOS App Development',
                     'Cross-Platform App Development',
@@ -98,7 +123,8 @@ class SiteContent
                 'text' => 'We design and develop custom software solutions that streamline business operations, improve efficiency, and support growth. From internal management systems to industry-specific tools, PearlMind builds software tailored exactly to how your business works.',
                 'meta_title' => 'Software Development Doha | Custom Software Qatar | PearlMind',
                 'meta_description' => 'Custom software development in Doha — CRM, ERP, booking systems, and API integration by PearlMind.',
-                'img' => '/images/services/software.jpg',
+                'meta_keywords' => 'software development Qatar, custom software Doha, CRM Qatar, ERP software Doha, business software Qatar',
+                'img' => '/amonx/images/team/team-1-4.jpg',
                 'offers' => [
                     'Custom Business Software & Management Systems',
                     'CRM & ERP Solutions',
@@ -146,6 +172,16 @@ class SiteContent
     /** @return list<array{title: string, url: string, domain: string, img: string, cat: string}> */
     public static function works(): array
     {
+        if (Schema::hasTable('projects') && Project::query()->where('is_active', true)->exists()) {
+            return Project::query()->visible()->get()->map(fn (Project $project) => [
+                'title' => $project->title,
+                'url' => $project->url,
+                'domain' => $project->domain(),
+                'cat' => $project->category,
+                'img' => $project->image,
+            ])->all();
+        }
+
         $sites = [
             ['The Mok International', 'https://themokinternational.com', 'Website'],
             ['Electronyat', 'https://electronyat.qa', 'E-commerce'],

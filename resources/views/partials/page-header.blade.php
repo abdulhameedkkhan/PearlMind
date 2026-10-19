@@ -23,10 +23,34 @@
                     </ul>
                 </div>
             </div>
+@php
+    $crumbs = [['name' => 'Home', 'item' => \App\Support\SiteContent::canonical('/')]];
+    foreach ($breadcrumb as $crumb) {
+        $path = !empty($crumb['url']) ? (parse_url($crumb['url'], PHP_URL_PATH) ?: '/') : '/';
+        $crumbs[] = [
+            'name' => $crumb['label'],
+            'item' => \App\Support\SiteContent::canonical($path),
+        ];
+    }
+    $crumbs[] = ['name' => $title, 'item' => \App\Support\SiteContent::canonical()];
+    $breadcrumbLd = [
+        '@context' => 'https://schema.org',
+        '@type' => 'BreadcrumbList',
+        'itemListElement' => collect($crumbs)->values()->map(fn ($crumb, $i) => [
+            '@type' => 'ListItem',
+            'position' => $i + 1,
+            'name' => $crumb['name'],
+            'item' => $crumb['item'],
+        ])->all(),
+    ];
+@endphp
+@push('jsonld')
+    <script type="application/ld+json">{!! json_encode($breadcrumbLd, JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE) !!}</script>
+@endpush
             <div class="col-xl-6 d-none d-xl-block">
                 <div class="page-header__image">
                     <div class="page-header__image__box grid-reveal-anim">
-                        <img src="{{ asset('amonx/images/resources/page-header-1.jpg') }}" alt="{{ $title }}" data-animate="true" class="grid-reveal-anim-img">
+                        <img src="{{ $image ?? asset('amonx/images/resources/page-header-1.jpg') }}" alt="{{ $imageAlt ?? $title }}" data-animate="true" class="grid-reveal-anim-img {{ isset($image) ? 'page-header__portrait' : '' }}">
                     </div>
                 </div>
             </div>

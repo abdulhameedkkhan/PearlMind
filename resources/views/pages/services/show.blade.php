@@ -2,10 +2,13 @@
 
 @section('title', $service['meta_title'])
 @section('meta_description', $service['meta_description'])
+@section('meta_keywords', $service['meta_keywords'])
 
 @section('content')
     @include('partials.page-header', [
-        'title' => $service['title'],
+        'title' => $service['headline'],
+        'image' => $service['img'],
+        'imageAlt' => $service['title'].' in Qatar',
         'breadcrumb' => [
             ['label' => 'Services', 'url' => route('services')],
         ],
@@ -38,12 +41,11 @@
 
             <div class="service-details__content">
                 <div class="service-details__box service-details__box--1">
-                    <h2 class="service-details__title" data-aos="fade-up">{{ $service['headline'] }}</h2>
                     <p class="service-details__text" data-aos="fade-up">{{ $service['text'] }}</p>
                 </div>
 
                 <div class="service-details__inner mt-5">
-                    <h3 class="service-details__inner__title mb-4">What We Offer</h3>
+                    <h2 class="service-details__inner__title mb-4">What We Offer</h2>
                     <ul class="service-details__inner__list list-unstyled row">
                         @foreach ($service['offers'] as $offer)
                             <li class="col-md-6 mb-3">
@@ -117,3 +119,16 @@
         </div>
     </section>
 @endsection
+
+@push('jsonld')
+    <script type="application/ld+json">{!! json_encode([
+        '@context' => 'https://schema.org',
+        '@type' => 'Service',
+        'name' => $service['headline'],
+        'serviceType' => $service['title'],
+        'description' => $service['meta_description'],
+        'url' => \App\Support\SiteContent::canonical('services/'.$service['slug']),
+        'areaServed' => ['@type' => 'Country', 'name' => 'Qatar'],
+        'provider' => ['@id' => \App\Support\SiteContent::origin().'/#business'],
+    ], JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE) !!}</script>
+@endpush

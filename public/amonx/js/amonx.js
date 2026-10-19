@@ -73,7 +73,9 @@
     },
   };
 
-  Chart.register(inBarValuePlugin);
+  if (typeof Chart !== "undefined") {
+    Chart.register(inBarValuePlugin);
+  }
 
   function initamonxBarChart() {
     if ($(".amonx-bar-chart").length) {
@@ -299,7 +301,7 @@
   // webgl images hover animation
   function initWebglHover(context) {
     const $scope = context ? $(context) : $(document);
-    if (!$scope.find(".bw-hover-item").length) return;
+    if (!$scope.find(".bw-hover-item").length || typeof hoverEffect === "undefined") return;
 
     // Check if the element has actually rendered with a width/height;
     // if not, retry on the next frame until CSS layout has settled

@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Inquiry;
+use App\Models\TeamMember;
 use App\Support\SiteContent;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -14,6 +16,7 @@ class PageController extends Controller
         return view('pages.home', [
             'featuredServices' => SiteContent::featuredServices(),
             'works' => array_slice(SiteContent::works(), 0, 6),
+            'team' => TeamMember::query()->visible()->get(),
             'company' => SiteContent::company(),
         ]);
     }
@@ -23,6 +26,7 @@ class PageController extends Controller
         return view('pages.about', [
             'company' => SiteContent::company(),
             'whyChoose' => SiteContent::whyChoose(),
+            'team' => TeamMember::query()->visible()->get(),
         ]);
     }
 
@@ -72,13 +76,15 @@ class PageController extends Controller
 
     public function contactStore(Request $request): RedirectResponse
     {
-        $request->validate([
+        $data = $request->validate([
             'name' => ['required', 'string', 'max:120'],
             'email' => ['required', 'email', 'max:180'],
             'phone' => ['required', 'string', 'max:40'],
             'service' => ['required', 'string', 'max:180'],
             'message' => ['required', 'string', 'max:5000'],
         ]);
+
+        Inquiry::create($data);
 
         return redirect()
             ->route('contact')

@@ -6,7 +6,7 @@
     <div class="main-footer__top">
         <div class="main-footer__marquee reveal-fade-up" data-delay="0.3">
             <div class="marquee marquee-left--gsap">
-                <h2 class="marquee__toleft">
+                <p class="marquee__toleft">
                     <span class="main-footer__marquee__title">Let's <mark>Work</mark> Together</span>
                     <span class="main-footer__marquee__icon"><i class="icon-tagline"></i></span>
                     <span class="main-footer__marquee__title">Let's <mark>Create</mark> Together</span>
@@ -17,7 +17,7 @@
                     <span class="main-footer__marquee__icon"><i class="icon-tagline"></i></span>
                     <span class="main-footer__marquee__title">Let's Start a <mark>Project</mark></span>
                     <span class="main-footer__marquee__icon"><i class="icon-tagline"></i></span>
-                </h2>
+                </p>
             </div>
         </div>
     </div>

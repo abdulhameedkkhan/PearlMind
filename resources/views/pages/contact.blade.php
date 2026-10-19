@@ -1,19 +1,17 @@
 @extends('layouts.app')
 
-@section('title', 'Contact Us | PearlMind Digital Agency Doha, Qatar')
+@section('title', 'Contact PearlMind | Digital Agency in Doha, Qatar')
 @section('meta_description', 'Contact PearlMind in Doha, Qatar — Building No. 71, Floor 6, Office 601, Al Doha Al Jadeeda. Call +974 7176 0983 or email contact@pearlmind.qa.')
+@section('meta_keywords', 'contact PearlMind, digital agency Doha contact, website quote Qatar, +974 7176 0983, Al Doha Al Jadeeda, contact@pearlmind.qa')
 
 @section('content')
-    @include('partials.page-header', ['title' => 'Contact Us'])
+    @include('partials.page-header', [
+        'title' => 'Contact PearlMind',
+        'image' => asset('amonx/images/team/team-1-2.jpg'),
+        'imageAlt' => 'PearlMind client in a hijab',
+    ])
 
-    <section class="contact-one image-parallax space-top">
-        @if (file_exists(public_path('amonx/images/videos/contact-1-1.mp4')))
-            <div class="contact-one__video">
-                <video class="contact-one__video__bg image-parallax-lr" autoplay muted loop playsinline preload="auto">
-                    <source src="{{ asset('amonx/images/videos/contact-1-1.mp4') }}" type="video/mp4">
-                </video>
-            </div>
-        @endif
+    <section class="contact-one contact-one--page space-top">
         <div class="container">
             <div class="row gutter-y-40">
                 <div class="col-xl-5 col-lg-6">
@@ -52,12 +50,12 @@
                         </div>
 
                         @if (count($faqs))
-                            <div class="mt-4">
-                                <h3 class="mb-3">Quick Answers</h3>
+                            <div class="pearl-faq">
+                                <h3>Quick Answers</h3>
                                 @foreach ($faqs as $faq)
-                                    <details class="mb-3">
-                                        <summary style="cursor:pointer;font-weight:600">{{ $faq['q'] }}</summary>
-                                        <p class="mt-2">{{ $faq['a'] }}</p>
+                                    <details>
+                                        <summary>{{ $faq['q'] }}</summary>
+                                        <p>{{ $faq['a'] }}</p>
                                     </details>
                                 @endforeach
                             </div>
@@ -123,7 +121,7 @@
     <div class="google-map google-map__contact">
         <iframe
             title="PearlMind office location"
-            src="https://maps.google.com/maps?q={{ urlencode($company['address']) }}&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            src="https://maps.google.com/maps?q={{ urlencode('Al Doha Al Jadeeda, Doha, Qatar') }}&z=15&output=embed"
             class="map__contact"
             allowfullscreen
             loading="lazy"
@@ -131,3 +129,18 @@
         ></iframe>
     </div>
 @endsection
+
+@push('jsonld')
+    <script type="application/ld+json">{!! json_encode([
+        '@context' => 'https://schema.org',
+        '@type' => 'FAQPage',
+        'mainEntity' => collect($faqs)->map(fn ($faq) => [
+            '@type' => 'Question',
+            'name' => $faq['q'],
+            'acceptedAnswer' => [
+                '@type' => 'Answer',
+                'text' => $faq['a'],
+            ],
+        ])->values()->all(),
+    ], JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE) !!}</script>
+@endpush

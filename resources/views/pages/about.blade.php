@@ -1,10 +1,15 @@
 @extends('layouts.app')
 
-@section('title', 'About Us | Digital Agency in Doha, Qatar | PearlMind')
-@section('meta_description', 'About PearlMind — a leading digital agency in Doha, Qatar. Website development, social media marketing, apps & software for 100+ businesses.')
+@section('title', 'About PearlMind | Digital Agency in Doha, Qatar')
+@section('meta_description', 'About PearlMind, a digital agency in Al Doha Al Jadeeda, Doha. Websites, social media marketing, apps, and software for businesses across Qatar.')
+@section('meta_keywords', 'about PearlMind, digital agency Doha, web design company Qatar, marketing agency Qatar, Al Doha Al Jadeeda, PearlMind Qatar')
 
 @section('content')
-    @include('partials.page-header', ['title' => 'About Us'])
+    @include('partials.page-header', [
+        'title' => 'About PearlMind',
+        'image' => asset('amonx/images/team/team-1-1.jpg'),
+        'imageAlt' => 'PearlMind team member in Doha',
+    ])
 
     <section class="about-one about-one--page space-y">
         <div class="container">
@@ -23,6 +28,18 @@
                     </p>
                 </div>
             </div>
+
+            @if ($team->isNotEmpty())
+                <div class="row gutter-y-30 mt-5">
+                    @foreach ($team as $member)
+                        <div class="col-6 col-lg-3">
+                            <img src="{{ $member->photo }}" alt="{{ $member->name }}" style="width:100%;height:280px;object-fit:cover;object-position:center 16%;border-radius:16px">
+                            <h3 class="mt-3 mb-1" style="font-size:22px">{{ $member->name }}</h3>
+                            <p class="mb-0">{{ $member->role }}</p>
+                        </div>
+                    @endforeach
+                </div>
+            @endif
 
             <div class="row gutter-y-40 mt-5">
                 <div class="col-md-6">
